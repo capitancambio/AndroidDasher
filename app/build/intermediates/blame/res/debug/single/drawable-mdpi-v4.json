@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/javi/AndroidStudioProjects/AndroidDasher1/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/ic_launcher.png",
+        "source": "/home/javi/AndroidStudioProjects/AndroidDasher1/app/build/intermediates/exploded-aar/com.github.capitancambio/tecla-sdk/cf0dae33f1/res/drawable-mdpi-v4/ic_launcher.png"
+    },
+    {
+        "merged": "/home/javi/AndroidStudioProjects/AndroidDasher1/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/icon.png",
+        "source": "/home/javi/AndroidStudioProjects/AndroidDasher1/app/src/main/res/drawable-mdpi/icon.png"
+    }
+]

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/javi/AndroidStudioProjects/AndroidDasher1/app/build/intermediates/exploded-aar/com.github.capitancambio/tecla-sdk/cf0dae33f1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="7d900de0d6398aa8d099ef22b01b55fb40703f0f">
+        <dex dex="/home/javi/AndroidStudioProjects/AndroidDasher1/app/build/intermediates/pre-dexed/debug/com.github.capitancambio-tecla-sdk-cf0dae33f1_40c8defbbfc682a0bc726810fdeb2bcdbb8d9f53.jar" />
+    </item>
+    <item
+        jar="/home/javi/AndroidStudioProjects/AndroidDasher1/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="/home/javi/AndroidStudioProjects/AndroidDasher1/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.3.0_5c11f35b4bc3a6783df5a63b4009e69130914168.jar" />
+    </item>
+    <item
+        jar="/home/javi/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="/home/javi/AndroidStudioProjects/AndroidDasher1/app/build/intermediates/pre-dexed/debug/support-annotations-23.3.0_c9eca58f8c6d3b1cf9a93b566cd2b3ed57c336e2.jar" />
+    </item>
+    <item
+        jar="/home/javi/AndroidStudioProjects/AndroidDasher1/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/libs/internal_impl-23.3.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="/home/javi/AndroidStudioProjects/AndroidDasher1/app/build/intermediates/pre-dexed/debug/internal_impl-23.3.0_d325bf4772b08cac724fd6c3182d474bef5a117d.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,13 @@
+<dasher.android.DualIMCheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/checkbox_boxes"
+    android:key="AndroidBoxes"
+    childKey="AndroidScan"
+    inputDevice="Touch Input"
+    inputFilterOn="Scanning Menu Mode"
+    inputFilterOff="Direct Mode"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="4dip"
+    android:layout_gravity="center_vertical"
+    android:focusable="false"
+    android:clickable="false" />
