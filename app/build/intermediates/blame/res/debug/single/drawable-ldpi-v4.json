@@ -2,5 +2,9 @@
     {
         "merged": "/home/javi/AndroidStudioProjects/AndroidDasher1/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/icon.png",
         "source": "/home/javi/AndroidStudioProjects/AndroidDasher1/app/src/main/res/drawable-ldpi/icon.png"
+    },
+    {
+        "merged": "/home/javi/AndroidStudioProjects/AndroidDasher/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/icon.png",
+        "source": "/home/javi/AndroidStudioProjects/AndroidDasher/app/src/main/res/drawable-ldpi/icon.png"
     }
 ]

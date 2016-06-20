@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/javi/AndroidStudioProjects/AndroidDasher/app/build/intermediates/res/merged/debug/xml/method.xml",
+        "source": "/home/javi/AndroidStudioProjects/AndroidDasher/app/src/main/res/xml/method.xml"
+    },
+    {
         "merged": "/home/javi/AndroidStudioProjects/AndroidDasher1/app/build/intermediates/res/merged/debug/xml/method.xml",
         "source": "/home/javi/AndroidStudioProjects/AndroidDasher1/app/src/main/res/xml/method.xml"
     }
