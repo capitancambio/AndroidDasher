@@ -14,19 +14,19 @@ public abstract class CDasherButtons extends CStaticFilter {
 		m_pBoxes = SetupBoxes();
 	}
 	
-	protected static class SBox {
+	public static class SBox {
 		/**target of zoom*/
 		final int iX,iY;
 		/**location of top/bottom on screen*/
 		final int iDisplayTop, iDisplayBottom;
-		SBox(int iTop, int iBottom, int iDisplayTop, int iDisplayBottom) {
+		public SBox(int iTop, int iBottom, int iDisplayTop, int iDisplayBottom) {
 			if (iTop>=iBottom || iDisplayTop>=iDisplayBottom) throw new IllegalArgumentException();
 			iY = (iTop+iBottom)/2;
 			iX = (iBottom-iTop)/2;
 			this.iDisplayTop=iDisplayTop;
 			this.iDisplayBottom=iDisplayBottom;
 		}
-		SBox(int iDisplayTop, int iDisplayBottom, int safety) {
+		public SBox(int iDisplayTop, int iDisplayBottom, int safety) {
 			this(iDisplayTop-safety, iDisplayBottom+safety, iDisplayTop, iDisplayBottom);
 		}
 		public String toString() {
@@ -102,14 +102,15 @@ public abstract class CDasherButtons extends CStaticFilter {
 		int iWidth;
 
 		if(bActive) {
-			iColour = 1;
-			iWidth = 3;
+			iColour = 4;
+			iWidth = 5;
 		} else {
 			iColour = 2;
 			iWidth = 1;
 		}
 
 		pView.DasherDrawRectangle(iMaxX, box.iDisplayTop, 0, box.iDisplayBottom, -1, iColour, iWidth);
+
    }
 
 }

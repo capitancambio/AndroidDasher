@@ -245,8 +245,19 @@
 	          android:title="@string/Zoomsteps_title"
 	          android:max="64" min="8"/>
 	    </PreferenceScreen>
-	
-	    <PreferenceScreen
+
+		<PreferenceScreen
+			android:key="AndroidSSVEP"
+			android:title="@string/AndroidSSVEP_title"
+			android:summary="@string/AndroidSSVEP_summary"
+			android:widgetLayout="@layout/checkbox_ssvep">
+			<dasher.android.SeekBarPreference
+				android:key="ButtonMenuBoxes"
+				android:title="@string/ButtonMenuBoxes_title"
+				android:max="2" min="2" />
+		</PreferenceScreen>
+
+		<PreferenceScreen
 	      android:key="AndroidCompass"
 	      android:title="@string/AndroidCompass_title"
 	      android:summary="@string/AndroidCompass_summary"

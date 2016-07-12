@@ -25,6 +25,8 @@
 
 package dasher;
 
+import com.neurotechx.dasher.SSVEPMode;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -983,6 +985,7 @@ abstract public class CDasherInterfaceBase extends CDasherComponent {
 		RegisterModule(new CCompassMode(this, this));
 		RegisterModule(new CMenuMode(this, this, "Menu Mode"));
 		RegisterModule(new CButtonMode(this, this, "Direct Mode"));
+		RegisterModule(new SSVEPMode(this, this, "BCI Mode"));
 
 		//Not yet implemented:
 		//RegisterModule(new CDasherButtons(this, m_SettingsStore, this, 3, 3, false,12, "Alternating Direct Mode"));

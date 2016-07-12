@@ -39,33 +39,33 @@ public class ADasherInterface extends CDasherInterfaceBase {
 	 * to provide a new (/edit existing) alphabet, etc... */ 
 	private final AndroidSettings sets;
 	protected final Context androidCtx;
-	private final BlockingQueue<Runnable> tasks = supportsLinkedBlockingQueue ? new LinkedBlockingQueue<Runnable>() : new ArrayBlockingQueue<Runnable>(5);
+	private final BlockingQueue<Runnable> tasks = new LinkedBlockingQueue<Runnable>();
 	private final Thread taskThread;
-	private static final boolean supportsLinkedBlockingQueue;
+
 	private TiltInput tilt;
 	
-	static {
-		boolean ok;
-		try {
-			BlockingQueue<Integer> q = new LinkedBlockingQueue<Integer>();
-			Integer one=1, two=2;
-			q.put(one);
-			q.put(two);
-			q.remove(one);
-			q.remove(two);
-			q.put(3);
-			q.take();
-			//all ok
-			ok = true;
-		} catch (InterruptedException e) {
-			//shouldn't happen?!?!
-			ok = false;
-		} catch (NullPointerException e) {
-			Log.d("DasherIME","LinkedBlockingQueue threw NPE, must be old version, using ArrayBlockingQueue instead");
-			ok = false;
-		}
-		supportsLinkedBlockingQueue = ok;
-	}
+//	static {
+//		boolean ok;
+//		try {
+//			BlockingQueue<Integer> q = new LinkedBlockingQueue<Integer>();
+//			Integer one=1, two=2;
+//			q.put(one);
+//			q.put(two);
+//			q.remove(one);
+//			q.remove(two);
+//			q.put(3);
+//			q.take();
+//			//all ok
+//			ok = true;
+//		} catch (InterruptedException e) {
+//			//shouldn't happen?!?!
+//			ok = false;
+//		} catch (NullPointerException e) {
+//			Log.d("DasherIME","LinkedBlockingQueue threw NPE, must be old version, using ArrayBlockingQueue instead");
+//			ok = false;
+//		}
+//		supportsLinkedBlockingQueue = ok;
+//	}
 	
 	public ADasherInterface(Context androidCtx, boolean train) {
 		this(new AndroidSettings(PreferenceManager.getDefaultSharedPreferences(androidCtx)), androidCtx, train);
@@ -337,6 +337,8 @@ public class ADasherInterface extends CDasherInterfaceBase {
 			}
 		});
 		RegisterModule(new AndroidDirectMode(this, this, "Direct Mode"));
+		RegisterModule(new AndroidSSVEPMode(this, this, "BCI Mode"));
+
 		RegisterModule(new AndroidMenuMode(this, this, "Scanning Menu Mode"));
 		RegisterModule(new AndroidCompass(this,this));
 		RegisterModule(new Android1BDynamic(this, this));

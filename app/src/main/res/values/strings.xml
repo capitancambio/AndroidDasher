@@ -72,6 +72,9 @@
 <string name="MaxZoom_summary">Max factor to zoom in upon tap</string>
 <string name="AndroidBoxes_title">Box modes</string>
 <string name="AndroidBoxes_summary">Divide into boxes and scan or tap</string>
+<string name="AndroidSSVEP_title">BCI Mode</string>
+<string name="AndroidSSVEP_summary">Use blinking box for SSVEP</string>
+
 <string name="ButtonMenuBoxes_title">No. of forward boxes</string>
 <string name="ButtonMenuSafety_title">Safety margin</string>
 <string name="ButtonMenuSafety_summary">Don\'t zoom all the way into box</string>

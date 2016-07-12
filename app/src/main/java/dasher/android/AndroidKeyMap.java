@@ -1,12 +1,14 @@
 package dasher.android;
 
 import android.view.KeyEvent;
+
+import com.neurotechx.dasher.SSVEPMode;
+
 import dasher.CButtonMode;
 import dasher.CCompassMode;
 import dasher.CDasherComponent;
 import dasher.CDasherInterfaceBase;
 import dasher.CMenuMode;
-import dasher.CSettingsStore;
 import dasher.OneButtonDynamicFilter;
 import dasher.TwoButtonDynamicFilter;
 
@@ -115,4 +117,18 @@ class AndroidDirectMode extends CButtonMode implements AndroidKeyMap {
 		return -1;
 	}
 	
+}
+
+class AndroidSSVEPMode extends SSVEPMode implements AndroidKeyMap {
+
+	public AndroidSSVEPMode(CDasherComponent creator, CDasherInterfaceBase iface, String szName) {
+		super(creator, iface, szName);
+	}
+
+	public int ConvertAndroidKeycode(int keyCode) {
+		if (keyCode==KeyEvent.KEYCODE_0) return 1; //back i.e. zoom out
+		if (keyCode>=KeyEvent.KEYCODE_1 && keyCode<=KeyEvent.KEYCODE_9) return keyCode-KeyEvent.KEYCODE_1+2; //2+ = select that box
+		return -1;
+	}
+
 }
